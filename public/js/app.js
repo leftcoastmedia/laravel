@@ -994,10 +994,6 @@ window.Vue = __webpack_require__(34);
 
 Vue.component('example-component', __webpack_require__(37));
 
-var app = new Vue({
-    el: '#app'
-});
-
 // Bulma NavBar Burger Script
 document.addEventListener('DOMContentLoaded', function () {
     // Get all "navbar-burger" elements

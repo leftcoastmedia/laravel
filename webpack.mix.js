@@ -11,7 +11,13 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'js/').sass('resources/assets/sass/app.scss', 'css/');
+mix.js('resources/assets/js/app.js', 'js/')
+    .sass('resources/assets/sass/app.scss', 'css/');
+mix.stylus('resources/assets/stylus/style.styl', 'public/css', {
+    use: [
+        require('rupture')()
+    ]
+});
 
 // Full API
 // mix.js(src, output);

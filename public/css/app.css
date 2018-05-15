@@ -19552,22 +19552,3 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 /* Action Menu */
 
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  border: 30px solid #ff3860;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-

@@ -24,53 +24,65 @@
 </head>
 
 <body>
-<section class="hero is-fullheight">
-    <div class ="hero-head">
-
-        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-            <div class="container">
-                <div class="navbar-brand" id ="logo">
-                    <a class="navbar-item" href="#">
-                        <img
-                        src="https://secure.actblue.com/x/object/actblue-images/brandings/header_images/10142/large.png?1500993628"
-                        alt="Mal">
-                    </a>
-                    <span class="navbar-burger burger" data-target="navMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-                <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="/">Home</a>
-                        <a class="navbar-item" href="/about">About</a>
-                        <a class="navbar-item " href="/platform">Issues</a>
-                        <a class="navbar-item " href="/join-us">Join Us</a>
-                        <a class="navbar-item" href="/blogs">Social Room</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class ="action-menu">
-            <a href ="#" class ="button" id = "donate">Donate</a>
-            <a href ="#" class ="button" id = "donate">Join-us</a>
-        </div>
-    </div>
-
+<section class ="hero full-height">
     <div class ="hero-body">
     <div class='embed-container'>
-        <iframe src="https://www.youtube.com/embed/-6UwVS2Xo-Q?rel=0"
-                frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen>
+        <iframe src='https://www.youtube.com/embed//-6UwVS2Xo-Q' frameborder='0' allowfullscreen>
 
         </iframe>
     </div>
-    </div>
-    <div class ="hero-footer">
+        <nav class="navbar" id = "front-nav">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="../">
+                        <img src="{{url('public/images/campaign-assets/m-logosmall.png)}}" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                            <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                            <span>Home</span>
+                            </a>
+                            </span>
+                        <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fa fa-superpowers"></i>
+                  </span>
+                            <span>Examples</span>
+                            </a>
+                            </span>
+                        <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                            <span>Documentation</span>
+                            </a>
+                            </span>
+                        <span class="navbar-item">
+                <a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
+                  <span class="icon">
+                    <i class="fa fa-github"></i>
+                  </span>
+                            <span>View Source</span>
+                            </a>
+                            </span>
+                    </div>
+                </div>
+        </nav>
 
-    </div>
-e</section>
+
+</section>
 
 
 

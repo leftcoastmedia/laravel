@@ -21,3 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/front', function () {
     return view('frontpage');
 });
+
+
+Route::get('/about', function () {
+    return view('about');
+});

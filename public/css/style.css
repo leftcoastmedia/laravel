@@ -1,5 +1,51 @@
-@import url(/public/css/bulma.css);.action-menu {
-  background: #fff;
+@import url(/public/css/bulma.css);#front-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.embed-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 56.25px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolutee;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+}
+.is-theme-green {
+  background: #1eb619;
+}
+.is-theme-pink {
+  background: #ff3860;
+}
+.is-theme-blue {
+  background: #3888ff;
+}
+.is-theme-cyan {
+  background: #19b6b1;
+}
+.is-theme-grey {
+  background: #e6e5e3;
+}
+.is-theme-red {
+  background: #b6191e;
+}
+.is-theme-neon {
+  background: #60ff38;
+}
+.action-menu {
+  background: #ff3860;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,8 +54,7 @@
           justify-content: flex-end;
 }
 .button {
-  background: #19b6b1;
-  border-top: 5px solid #ff6347;
+  border-top: 5px solid #ff3860;
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
   color: #fff;
@@ -21,3 +66,4 @@
   background: #fff;
   color: #19b6b1;
 }
+/*  Front Page Hero Splash Video  */
