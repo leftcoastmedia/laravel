@@ -43,10 +43,10 @@
                                 Home
                             </a>
                             <a class="navbar-item">
-                                Examples
+                                Take Action
                             </a>
                             <a class="navbar-item">
-                                Documentation
+                                Domate
                             </a>
 
                         </div>
