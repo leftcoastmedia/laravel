@@ -80,7 +80,7 @@
                     </div>
                 </div>
         </nav>
-
+    </div>
 
 </section>
 

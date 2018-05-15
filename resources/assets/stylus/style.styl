@@ -12,29 +12,22 @@ $theme-neon = #60ff38
 
 @import '/public/css/bulma.css'
 
-#front-nav
-    position absolute
-    top 0
-    left 0
-    z-index 1
+.splash-video
+    display
 
+        .embed-container
+            position absolute
+            top 0
+            left 0
+            height 100vh
+            max-width 100vw
+            overflow hidden
 
-.embed-container
-    position absolute
-    top 0
-    left 0
-    padding-bottom 56.25px
-    height 100vh
-    width 100vw
-    overflow hidden
-    z-index -1
+            .embed-container iframe, .embed-container object, .embed-container embed
+                position inherit
+                width 100%
+                height 100%
 
-    iframe, object, embed
-        position absolutee
-        top 0
-        left 0
-        width inherit
-        height inherit
 
 
 .is-theme-green
@@ -61,7 +54,7 @@ $theme-neon = #60ff38
 .is-theme-neon
     background $theme-neon
 
-
+/*
 .action-menu
     background $theme-pink
     display flex
