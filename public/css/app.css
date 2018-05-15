@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans);/*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
 
 /* modified path import of other modules */
 
@@ -19550,14 +19550,15 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   color: #fff;
 }
 
+/* Action Menu */
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  border: 50px solid #ff3860;
+  overflow: hidden;
+  border: 30px solid #ff3860;
 }
 
 .embed-container iframe,

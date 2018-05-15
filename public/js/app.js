@@ -967,7 +967,8 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(50);
+__webpack_require__(50);
+module.exports = __webpack_require__(51);
 
 
 /***/ }),
@@ -43346,6 +43347,12 @@ return Tagify;
 
 /***/ }),
 /* 50 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

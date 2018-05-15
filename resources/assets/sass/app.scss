@@ -2,25 +2,39 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
+@import url('https://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans');
+
+
 // Variables
+
+
+$theme-green: #1eb619;
+$theme-pink:#ff3860;
+$theme-blue:#3888ff;
+$theme-cyan:#19b6b1;
+$theme-grey:#e6e5e3;
 @import "initial-variables";
 @import "bulma";
+
+/* Action Menu */
+
 
 
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
     width:100vw;
     height:100vh;
-    border: 50px solid $red;
+   overflow: hidden;
+    border: 30px solid $theme-pink;
 
-    iframe, object, embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
 }
+.embed-container iframe, .embed-container object, .embed-container embed  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+

@@ -1,3 +1,8 @@
+@desktop
+<h1>Desktop view</h1>
+@elsedesktop
+<h1>Mobile view</h1>
+@enddesktop
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -15,22 +20,71 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
-<div class='embed-container'>
-    <iframe src='https://www.youtube.com/embed/-6UwVS2Xo-Q' frameborder='0' allowfullscreen>
+<section class="hero is-fullheight">
+    <div class ="hero-head">
 
-    </iframe>
-</div>
-
-<section class="mal-hero">
-    <div class="mal-hero-inner">
-        <h1>My awesome website</h1>
-        <h2>Look at this website and bask in its amazing glory!</h2>
-        <a href="https://example.com/" class="btn">Go ahead...</a>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand" id ="logo">
+                    <a class="navbar-item" href="#">
+                        <img
+                        src="https://secure.actblue.com/x/object/actblue-images/brandings/header_images/10142/large.png?1500993628"
+                        alt="Mal">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/">Home</a>
+                        <a class="navbar-item" href="/about">About</a>
+                        <a class="navbar-item " href="/platform">Issues</a>
+                        <a class="navbar-item " href="/join-us">Join Us</a>
+                        <a class="navbar-item" href="/blogs">Social Room</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class ="action-menu">
+            <a href ="#" class ="button" id = "donate">Donate</a>
+            <a href ="#" class ="button" id = "donate">Join-us</a>
+        </div>
     </div>
-</section>
+
+    <div class ="hero-body">
+    <div class='embed-container'>
+        <iframe src="https://www.youtube.com/embed/-6UwVS2Xo-Q?rel=0"
+                frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen>
+
+        </iframe>
+    </div>
+    </div>
+    <div class ="hero-footer">
+
+    </div>
+e</section>
+
+
+
+<script type="text/javascript">
+    (function () {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#' + burger.dataset.target);
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+        });
+    })();
+</script>
 
 </body>
+
 </html>

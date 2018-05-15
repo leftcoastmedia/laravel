@@ -1,0 +1,23 @@
+@import url(/public/css/bulma.css);.action-menu {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.button {
+  background: #19b6b1;
+  border-top: 5px solid #ff6347;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  -webkit-box-shadow: 6px 3px 5px #808080;
+          box-shadow: 6px 3px 5px #808080;
+  margin: 3px 3px 3px 3px;
+}
+.button:hover {
+  background: #fff;
+  color: #19b6b1;
+}
