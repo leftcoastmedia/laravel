@@ -1,77 +1,32 @@
-// Tile styled menus bar.
-$theme-green = #1eb619
-$theme-pink = #ff3860
-$theme-blue = #3888ff
-$theme-cyan = #19b6b1
-$theme-grey = #e6e5e3
-$theme-red = #b6191e
-$theme-neon = #60ff38
-//
+@import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'
+
+    html,body
+        font-family 'Open Sans', serif
 
 
-
-@import '/public/css/bulma.css'
-
-.splash-video
-    display
-
-        .embed-container
-            position absolute
-            top 0
-            left 0
+        .hero
+            width 100vw
             height 100vh
-            max-width 100vw
-            overflow hidden
-
-            .embed-container iframe, .embed-container object, .embed-container embed
-                position inherit
-                width 100%
-                height 100%
 
 
 
-.is-theme-green
-    background $theme-green
-
-.is-theme-pink
-    background $theme-pink
-
-.is-theme-blue
-    background $theme-blue
+            .hero-body
+                position relative
 
 
-.is-theme-cyan
-    background $theme-cyan
-
-.is-theme-grey
-    background $theme-grey
-
-
-.is-theme-red
-    background $theme-red
-
-
-.is-theme-neon
-    background $theme-neon
-
-/*
-.action-menu
-    background $theme-pink
-    display flex
-    justify-content flex-end
+                .splash-video
+                    position absolute
+                    max-width 100vw
+                    max-height 100vh
+                    top 0
+                    right 0
+                    left 0
+                    bottom 0
 
 
-.button
 
-    border-top 5px solid $theme-pink
-    font-family 'Oswald', sans-serif
-    font-size 24px
-    color white
-    box-shadow 6px 3px 5px grey
-    margin 3px 3px 3px 3px
-    ^[0]:hover
-        background white
-        color #19b6b1
-/*  Front Page Hero Splash Video  */
+
+
+
 
 
