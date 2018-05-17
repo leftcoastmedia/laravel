@@ -24,10 +24,17 @@ Route::get('/front', function () {
 
 
 Route::get('/about', function () {
-    return view('about');
+ return redirect()->away('https://www.malhyman.com/#AboutMal');
 });
 
 
 Route::get('/donate', function () {
     return redirect()->away('https://secure.actblue.com/donate/tytmal');
+});
+Route::get('/issues', function () {
+    return redirect()->away('https://www.malhyman.com/issues');
+});
+
+Route::get('/socialR', function () {
+    return redirect()->away('https://www.twitter.com/mal4congress');
 });
