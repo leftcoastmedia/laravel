@@ -1,6 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css);.hero-body {
   display: block;
-  background: #ff6347;
   position: relative;
 }
 .hero-body iframe {
@@ -9,4 +8,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+.hero-head {
+  background-color: #f5deb3;
+}
+.hero-head a.hover {
+  background-color: #0ff;
 }
