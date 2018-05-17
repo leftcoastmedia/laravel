@@ -1,105 +1,53 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel ="stylesheet" href ="{{url('css/style.css')}}"
 
-        <title>Laravel {{ app()->version() }}</title>
+</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
-        <!-- Styles -->
-
-
-    </head>
-    <body>
-    <section class="hero is-transparent is-fullheight">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-            <header class="navbar">
+<body>
+<section class="hero is-fullheight">
+    <div class="hero-head">
+        <nav class="navbar is-danger">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="{{url('images/campaign-assets/mal-monochrome.png')}}" alt="Logo">
+                        <a class="navbar-item" href="/">
+                        <img class= 'logo' src ="{{url('images/campaign-assets/mal-monochrome.png')}}">
                         </a>
-                        <span class="navbar-burger burger" >
+                        <span class="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
           </span>
                     </div>
-                    <div  class="navbar-menu">
+                    <div id="navMenu " class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active">
-                                Home
-                            </a>
-                            <a class="navbar-item">
-                                Take Action
-                            </a>
-                            <a class="navbar-item">
-                                Domate
-                            </a>
-
+                            <a href="/" class="navbar-item is-active">Home</a>
+                            <a href="/about" class="navbar-item">About</a>
+                            <a href="/issues" class="navbar-item">Issues</a>
+                            <a href="/socialR" class="navbar-item">Social Room</a>
+                            <a href="/donate" class="navbar-item">Donate</a>
                         </div>
                     </div>
                 </div>
 
-            </header>
-        </div>
+        </nav>
+    </div>
+    <div class="hero-body">
 
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body is-fullwidth">
-            <div class="splash-video">
-
-                <div class='embed-container'>
-                    <iframe src='https://www.youtube.com/embed//-6UwVS2Xo-Q' frameborder='0' allowfullscreen>
-
-                    </iframe>
-                </div>
-            </div>
-        </div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-6UwVS2Xo-Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
 
 
+</section>
 
-            <!-- Hero footer: will stick at the bottom -->
-        <div class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                    <ul>
-                        <li class="is-active"><a>Overview</a></li>
-                        <li><a>Modifiers</a></li>
-                        <li><a>Grid</a></li>
-                        <li><a>Elements</a></li>
-                        <li><a>Components</a></li>
-                        <li><a>Layout</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-
-
-    </body>
-    <script type="text/javascript">
-        (function() {
-            var burger = document.querySelector('.burger');
-            var nav = document.querySelector('#'+burger.dataset.target);
-            burger.addEventListener('click', function(){
-                burger.classList.toggle('is-active');
-                nav.classList.toggle('is-active');
-            });
-        })();
-    </script>
-
+</body>
 
 </html>
