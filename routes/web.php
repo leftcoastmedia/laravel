@@ -26,3 +26,8 @@ Route::get('/front', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+
+Route::get('/donate', function () {
+    return redirect()->away('https://secure.actblue.com/donate/tytmal');
+});
