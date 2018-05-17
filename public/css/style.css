@@ -1,55 +1,12 @@
-@import url(/public/css/bulma.css);.splash-video display block .embed-container {
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css);.hero-body {
+  display: block;
+  background: #ff6347;
+  position: relative;
+}
+.hero-body iframe {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  max-width: 100vw;
-  overflow: hidden;
-}
-.splash-video display block .embed-container .embed-container iframe,
-.splash-video display block .embed-container .embed-container object,
-.splash-video display block .embed-container .embed-container embed {
-  position: inherit;
   width: 100%;
   height: 100%;
 }
-.is-theme-green {
-  background: #1eb619;
-}
-.is-theme-pink {
-  background: #ff3860;
-}
-.is-theme-blue {
-  background: #3888ff;
-}
-.is-theme-cyan {
-  background: #19b6b1;
-}
-.is-theme-grey {
-  background: #e6e5e3;
-}
-.is-theme-red {
-  background: #b6191e;
-}
-.is-theme-neon {
-  background: #60ff38;
-}
-/*
-.action-menu
-    background $theme-pink
-    display flex
-    justify-content flex-end
-
-
-.button
-
-    border-top 5px solid $theme-pink
-    font-family 'Oswald', sans-serif
-    font-size 24px
-    color white
-    box-shadow 6px 3px 5px grey
-    margin 3px 3px 3px 3px
-    ^[0]:hover
-        background white
-        color #19b6b1
-/*  Front Page Hero Splash Video  */
