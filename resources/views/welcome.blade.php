@@ -15,7 +15,7 @@
 <body>
 <section class="hero is-fullheight">
     <div class="hero-head">
-        <nav class="navbar is-danger">
+        <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="/">
